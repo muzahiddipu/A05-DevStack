@@ -57,7 +57,21 @@ function App() {
     <>
       <Navbar></Navbar>
       <Banner></Banner>
-      <Suspense fallback={<h1>Loading</h1>}>
+      <Suspense
+        fallback={
+          <div
+            className="container mx-auto flex min-h-[18rem] items-center justify-center gap-3 px-4 py-16 text-base-content/70"
+            role="status"
+            aria-live="polite"
+          >
+            <span
+              className="loading loading-spinner loading-md text-primary"
+              aria-hidden="true"
+            ></span>
+            <span>Loading technologies...</span>
+          </div>
+        }
+      >
         <Technologies
           technologiesInformation={technologiesInformation}
           selectedTechnologies={selectedTechnologies}
@@ -66,7 +80,13 @@ function App() {
           onClearStack={handleClearStack}
         />
       </Suspense>
-      <ToastContainer position="top-right" autoClose={3000} />
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        theme="light"
+        toastClassName="!bg-brand-gradient !font-medium !text-white !shadow-lg"
+        progressClassName="!bg-white/75"
+      />
       <FooterSection></FooterSection>
     </>
   );
