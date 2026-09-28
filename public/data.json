@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "React",
+    "category": "Frontend",
+    "description": "A popular JavaScript library for building component-based user interfaces.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Popular"
+  },
+  {
+    "id": 2,
+    "name": "TypeScript",
+    "category": "Language",
+    "description": "A strongly typed programming language that builds on JavaScript for better scale.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "Essential"
+  },
+  {
+    "id": 3,
+    "name": "Node.js",
+    "category": "Backend",
+    "description": "An open-source, cross-platform JavaScript runtime environment for server-side code.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": "Fast"
+  },
+  {
+    "id": 4,
+    "name": "Python",
+    "category": "Language",
+    "description": "A high-level, versatile programming language renowned for readability and data science.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Popular"
+  },
+  {
+    "id": 5,
+    "name": "PostgreSQL",
+    "category": "Database",
+    "description": "A powerful, open-source object-relational database system with high reliability.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Essential"
+  },
+  {
+    "id": 6,
+    "name": "Tailwind CSS",
+    "category": "Styling",
+    "description": "A utility-first CSS framework packed with classes for rapid UI development.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+    "rating": 4.8,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Fast"
+  },
+  {
+    "id": 7,
+    "name": "Docker",
+    "category": "DevOps",
+    "description": "A platform for developing, shipping, and running applications inside isolated containers.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": "Containers"
+  },
+  {
+    "id": 8,
+    "name": "Git",
+    "category": "Tools",
+    "description": "A distributed version control system designed to handle small to large projects efficienty.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Essential"
+  },
+  {
+    "id": 9,
+    "name": "MongoDB",
+    "category": "Database",
+    "description": "A document-oriented NoSQL database designed for high availability and easy scaling.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    "rating": 4.5,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Flexible"
+  },
+  {
+    "id": 10,
+    "name": "GraphQL",
+    "category": "Backend",
+    "description": "A query language for APIs providing an efficient alternative to traditional REST.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+    "rating": 4.6,
+    "difficulty": "Advanced",
+    "badge": "Modern"
+  },
+  {
+    "id": 11,
+    "name": "Sass",
+    "category": "Styling",
+    "description": "A mature, stable CSS extension language that adds variables, nesting, and mixins.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+    "rating": 4.5,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Classic"
+  },
+  {
+    "id": 12,
+    "name": "Kubernetes",
+    "category": "DevOps",
+    "description": "An open-source container orchestration engine for automating deployment and scaling.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
+    "rating": 4.6,
+    "difficulty": "Advanced",
+    "badge": "Scalable"
+  }
+]
