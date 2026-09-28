@@ -1,13 +1,25 @@
 import type { Technology } from "../../types/technology";
-import { FaStar } from "react-icons/fa";
+import { FaCheck, FaStar } from "react-icons/fa";
 
 type TechnologyCardProps = {
   technology: Technology;
+  isAdded: boolean;
+  onAdd: (technology: Technology) => void;
 };
 
-const TechnologyCard = ({ technology }: TechnologyCardProps) => {
+const TechnologyCard = ({
+  technology,
+  isAdded,
+  onAdd,
+}: TechnologyCardProps) => {
   return (
-    <article className="card h-full rounded-2xl border border-base-200 bg-base-100 shadow-sm transition-shadow duration-200 hover:shadow-md">
+    <article
+      className={`card h-full rounded-2xl border bg-base-100 shadow-sm transition-[border-color,box-shadow,transform] duration-300 ease-out hover:-translate-y-0.5 hover:shadow-md ${
+        isAdded
+          ? "border-primary ring-1 ring-primary/25 shadow-md"
+          : "border-base-200"
+      }`}
+    >
       <div className="card-body gap-0 p-5 sm:p-6">
         <div className="mb-5 flex items-center justify-between gap-3">
           <img
@@ -37,8 +49,21 @@ const TechnologyCard = ({ technology }: TechnologyCardProps) => {
             {technology.rating.toFixed(1)}
           </span>
         </div>
-        <button className="btn btn-neutral mt-4 min-h-10 h-10 w-full rounded-lg text-sm font-medium">
-          Add to Stack
+        <button
+          className={`btn mt-4 min-h-10 h-10 w-full rounded-lg text-sm font-medium ${
+            isAdded ? "btn-success" : "btn-neutral"
+          }`}
+          disabled={isAdded}
+          onClick={() => onAdd(technology)}
+          type="button"
+        >
+          {isAdded ? (
+            <>
+              <FaCheck aria-hidden="true" /> Added to Stack
+            </>
+          ) : (
+            "Add to Stack"
+          )}
         </button>
       </div>
     </article>

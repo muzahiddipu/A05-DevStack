@@ -3,7 +3,7 @@ import bannerImg from "../assets/banner-stack.png";
 const Banner = () => {
   return (
     <section className="bg-base-100">
-      <div className="container mx-auto grid items-center gap-8 px-4 py-8 text-center sm:py-12 md:grid-cols-2 md:gap-16 md:py-24">
+      <div className="container mx-auto grid items-center gap-8 px-4 py-4 text-center sm:py-12 md:grid-cols-2 md:gap-16 md:py-24">
         {/* Headline and actions introduce the stack builder. */}
         <div className="mx-auto flex w-full max-w-2xl flex-col items-center md:mx-0 md:items-start md:text-left">
           <p className="mb-5 text-sm font-bold uppercase tracking-[0.18em] text-primary">
