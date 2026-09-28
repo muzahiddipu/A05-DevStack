@@ -35,10 +35,11 @@ const Technologies = ({
       </div>
       <div className="mt-8 grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_18rem]">
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {technologiesData.map((technology) => (
+          {technologiesData.map((technology, index) => (
             <TechnologyCard
               key={technology.id}
               technology={technology}
+              animationDelay={Math.min(index, 8) * 45}
               isAdded={selectedTechnologies.some(
                 (selected) => selected.id === technology.id,
               )}

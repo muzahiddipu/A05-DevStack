@@ -4,21 +4,24 @@ import { FaCheck, FaStar } from "react-icons/fa";
 type TechnologyCardProps = {
   technology: Technology;
   isAdded: boolean;
+  animationDelay: number;
   onAdd: (technology: Technology) => void;
 };
 
 const TechnologyCard = ({
   technology,
   isAdded,
+  animationDelay,
   onAdd,
 }: TechnologyCardProps) => {
   return (
     <article
-      className={`card h-full rounded-2xl border bg-base-100 shadow-sm transition-[border-color,box-shadow,transform] duration-300 ease-out hover:-translate-y-0.5 hover:shadow-md ${
+      className={`card animate-card-enter h-full rounded-2xl border bg-base-100 shadow-sm transition-[border-color,box-shadow,transform] duration-300 ease-out hover:-translate-y-0.5 hover:shadow-md ${
         isAdded
           ? "border-primary ring-1 ring-primary/25 shadow-md"
           : "border-base-200"
       }`}
+      style={{ animationDelay: `${animationDelay}ms` }}
     >
       <div className="card-body gap-0 p-5 sm:p-6">
         <div className="mb-5 flex items-center justify-between gap-3">
