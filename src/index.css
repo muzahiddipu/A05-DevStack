@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+@plugin "daisyui";
+
+@layer components {
+  .btn-brand {
+    @apply btn bg-brand-gradient text-white border-none shadow-md hover:opacity-90 hover:scale-105 active:scale-95 transition-all duration-200;
+  }
+}
