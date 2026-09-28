@@ -29,12 +29,28 @@ function App() {
     }
 
     setSelectedTechnologies((current) => [...current, technology]);
+    toast.success(`${technology.name} added to your stack.`);
   };
 
   const handleRemoveTechnology = (technologyId: number) => {
+    const technologyToRemove = selectedTechnologies.find(
+      (technology) => technology.id === technologyId,
+    );
+
     setSelectedTechnologies((current) =>
       current.filter((technology) => technology.id !== technologyId),
     );
+
+    if (technologyToRemove) {
+      toast.info(`${technologyToRemove.name} removed from your stack.`);
+    }
+  };
+
+  const handleClearStack = () => {
+    if (selectedTechnologies.length === 0) return;
+
+    setSelectedTechnologies([]);
+    toast.info("All technologies removed from your stack.");
   };
 
   return (
@@ -47,7 +63,7 @@ function App() {
           selectedTechnologies={selectedTechnologies}
           onAddTechnology={handleAddTechnology}
           onRemoveTechnology={handleRemoveTechnology}
-          onClearStack={() => setSelectedTechnologies([])}
+          onClearStack={handleClearStack}
         />
       </Suspense>
       <ToastContainer position="top-right" autoClose={3000} />
